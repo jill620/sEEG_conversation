@@ -1,61 +1,74 @@
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
-		Project title: Natural language processing models reveal neural dynamics of human conversation
+# Project title
+
+Natural language processing models reveal neural dynamics of human conversation
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 ----------------------------------------------------------------------------------------------------------------
 
 
 
-Project description: Utilize artificial natural language processing model to study neural activity during 
+## Project description
+
+Utilize artificial natural language processing model to study neural activity during 
 natural conversation recorded by intracranial EEG.
 
 
 ----------------------------------------------------------------------------------------------------------------
-Data Access and Replacement Instructions
 
-Due to the large size of the processed data, they have been uploaded to the DABI database with the following identifiers:
+## Data Access and Replacement Instructions
+
+_Due to the large size of the data and output, they have been uploaded to the DABI database with the following identifiers:_
+```
 
 	Accession Code: M6RES1N4MVA3
 	
 	DOI: https://doi.org/10.18120/5jg5-j555
+
+```
 	
 Follow these steps:
+```
 
 	1. Download the Data:
 
 		Navigate to the DOI link above or search for the accession code M6RES1N4MVA3 in the DABI database.
 
-		Download the folder: processed_data/envelope from the repository.
+		Download the folders: 
+			/processed_data/envelope
+			/NLP/
+			/analysis/result/
 
 	2. Replace Existing Files:
 
-		Locate the data/envelope folder in your local directory.
+		Locate the following folders in your local directory:
+			/data/envelope
+			/NLP/
+			/analysis/result
 
-		Replace its contents with the downloaded processed_data/envelope files.
+		Replace its contents with the downloaded files respectively.
 
-
+```
 
 ----------------------------------------------------------------------------------------------------------------
 
-Organization of materials: data files, custom-written codes, and the results used for the
+## Organization of materials
 
-analysis are provided in separate folders:
-
-
+_data files, custom-written codes, and the results used for the analysis are provided in separate folders:_
 
 
-Data:		
+
+
+### Data:		
 
 1. neuronal data used in the analysis is provided in “data”. 
-
+```
 		
 		The data folder includes 1 subfolder:
 
@@ -74,8 +87,11 @@ Data:
         The detailed description of each file and the variables
 
 		contained within the files are provided within the 'datafolder_README.txt'.
+```
+
 
 2. The embeddings used in the analysis are provided in the "NLP".
+```
 
         The "NLP" folder includes ".npy" files ranging from pt01_gpt2_cycle.npy to pt14_gpt2_cycle.npy.
 
@@ -85,8 +101,10 @@ Data:
         A ‘NLP_README.txt’ file provides summary information about each file.
 
              - NLP/NLP_README.txt
+```
 
-3. The transcription data used in the analysis is provided in "transcription" folder.
+4. The transcription data used in the analysis is provided in "transcription" folder.
+```
 
         The "transcription" folder includeds ".csv" files ranging from pt01.csv to pt14.csv 
 
@@ -101,8 +119,10 @@ Data:
         4. sid: Boolean where 0 indicates the participant is speaking, 
 
          while 1 indicates the participant is listening.
+```
 
-4. The parcellations data used in the analysis and figure is provided in "parcellations" folder.
+6. The parcellations data used in the analysis and figure is provided in "parcellations" folder.
+```
 
         The "parcellations" folder includes a ".csv" file containing detailed information about 
 
@@ -114,10 +134,12 @@ Data:
         A ‘parcellations_README.txt’ file provides summary information about each file.
 
                 - parcellations/parcellations_README.txt
+```
 
 
-Codes: 		A ‘scripts_README.txt’ file provides summary information about the custom-written codes used for the 
-
+### Codes: 		
+_A ‘scripts_README.txt’ file provides summary information about the custom-written codes used for the_
+```
         analysis. Codes used in the analysis is provided as:
 
 
@@ -140,22 +162,30 @@ Codes: 		A ‘scripts_README.txt’ file provides summary information about the 
 
                 - analysis/scripts_README.txt
 
-		
+```
 
-figures:		Figures generated from the scripts figure1.ipynb to figure4.ipynb will be stored in their corresponding
+### figures:		
+_Figures generated from the scripts figure1.ipynb to figure4.ipynb will be stored in their corresponding_
+```
 
         sub-folders (i.e. figure1, figure2,..., figure4 within the figure folder)
 
 
+```
 
+### Results:	
+_Results of analysis generated from the script will be directly stored in the corresponding_
 
-Results:	Results of analysis generated from the script will be directly stored in the corresponding
+```
 
 		sub-folders (i.e. pt01, pt02,..., pt14 within analysis/result folder).
 
+```
+
 ----------------------------------------------------------------------------------------------------------------		
+
+## Dependencies
 
 PYTHON (v 3.11.3) was used for the main analyses.
 
 ----------------------------------------------------------------------------------------------------------------
-
