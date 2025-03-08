@@ -33,7 +33,7 @@ _Due to the large size of the data and output, they have been uploaded to the DA
 
 ```
 	
-Follow these steps:
+Instruction to obtain data:
 ```
 
 	1. Download the Data:
@@ -76,17 +76,16 @@ _data files, custom-written codes, and the results used for the analysis are pro
 
 
 
-		A ‘datafolder_README.txt’ file provides summary information about each file, corresponding scripts, 
+        A ‘datafolder_README.txt’ file provides summary information about each file, corresponding scripts, 
 
 		figures, and panels. The data files are in ".npy" format. 
 
         The data for each participant is stored, with participant IDs ranging from pt01 to pt14.
 
-        Each participant's data is saved in their respective numbered folder.
+        Each participant's data is saved in their respective folder.
 
-        The detailed description of each file and the variables
-
-		contained within the files are provided within the 'datafolder_README.txt'.
+        The detailed description of each file and the variables contained within the files are provided
+		within the 'datafolder_README.txt'.
 ```
 
 
@@ -116,9 +115,7 @@ _data files, custom-written codes, and the results used for the analysis are pro
 
         3. end_time: The time at which the pronunciation of a words ends in seconds during the conversation
 
-        4. sid: Boolean where 0 indicates the participant is speaking, 
-
-         while 1 indicates the participant is listening.
+        4. sid: Boolean where 0 indicates the participant is speaking, and other integers indicate listening.
 ```
 
 6. The parcellations data used in the analysis and figure is provided in "parcellations" folder.
@@ -130,7 +127,6 @@ _data files, custom-written codes, and the results used for the analysis are pro
 
         A ".npy" file containing the position of each electrode.
 
-
         A ‘parcellations_README.txt’ file provides summary information about each file.
 
                 - parcellations/parcellations_README.txt
@@ -138,9 +134,9 @@ _data files, custom-written codes, and the results used for the analysis are pro
 
 
 ### Codes: 		
-_A ‘scripts_README.txt’ file provides summary information about the custom-written codes used for the_
+_A ‘scripts_README.txt’ file provides summary information about the custom-written codes used for the analysis._
 ```
-        analysis. Codes used in the analysis is provided as:
+        Code used in the analysis is provided as:
 
 
             functions:	custom-written PYTHON functions used within the scripts for the analysis which are
@@ -151,27 +147,13 @@ _A ‘scripts_README.txt’ file provides summary information about the custom-w
                 
                             are stored together in the same file.
 
-
-
-        figure. Codes used to generate figures are stored in files ranging from figure1.ipynb to figure4.ipynb, 
-
-                and to produce the required visualization plots.
-
-
+        
         A ‘scripts_README.txt’ file provides summary information about each file.
 
                 - analysis/scripts_README.txt
 
 ```
 
-### figures:		
-_Figures generated from the scripts figure1.ipynb to figure4.ipynb will be stored in their corresponding_
-```
-
-        sub-folders (i.e. figure1, figure2,..., figure4 within the figure folder)
-
-
-```
 
 ### Results:	
 _Results of analysis generated from the script will be directly stored in the corresponding_
