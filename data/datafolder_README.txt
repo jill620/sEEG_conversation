@@ -41,22 +41,7 @@ Follow these steps:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-The data folder includes 2 subfolders:
-
-•	dataset: contains pre-processed neuronal activities for different task conditions.
-
-•	envelope: envelope: contains band-specific neuronal activity envelopes processed from raw signal.
-
-
-
-
-*dataset*
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 Folder name:		envelope
-
 
 
 Description: This folder contains sub-folders ranging from pt01 to pt14,
@@ -71,9 +56,9 @@ Description: This folder contains sub-folders ranging from pt01 to pt14,
 
 		- dimension: (n_samples, n_bands), where:
 
-		        n_samples: The number of time points in the raw sEEG signal for the given electrode.
+		        n_samples: The number of time points (1000 Hz) for the given channel.
 
-		        n_bands: The number of predefined frequency bands. [8,13], [13,30], [30,55], [70,110], [130,170]
+		        n_bands: The number of frequency bands: [8,13], [13,30], [30,55], [70,110], [130,170]
 
 
 
