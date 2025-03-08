@@ -64,7 +64,7 @@ Description: This file contains gpt2 embeddings for each word in conversation of
 
 		    - N: Total number of words in the conversation
 
-		    - 768: Hidden status size of GPT-2 for each layer
+		    - 768: Hidden embedding size of GPT-2 for each layer
 
 		    - 13: Total number of GPT-2 layers
 
